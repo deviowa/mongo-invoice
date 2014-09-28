@@ -1,0 +1,10 @@
+doctype html
+html(lang="en")
+    title Invoice App
+body
+    h1 Invoice App
+    h2 Customers
+    ul
+        each c in customers
+            li
+                a(href="/customers/"+c._id) #{c.name}
